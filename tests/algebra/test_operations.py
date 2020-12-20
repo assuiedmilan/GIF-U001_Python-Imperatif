@@ -1,6 +1,9 @@
 import pytest
+from imperatif.algebra_functions.operations import minmax
 
-from algebra_functions.operations import compute_sum_of_the_first_integers, print_sum_of_the_first_integers, minmax
+from imperatif.algebra_functions.operations import print_sum_of_the_first_integers
+
+from imperatif.algebra_functions.operations import compute_sum_of_the_first_integers
 
 
 @pytest.mark.parametrize("integer_to_test, expected_results", [(9, 45), (-5, 0), (-1, 0), (1, 1), (0, 0), (100, 5050)])

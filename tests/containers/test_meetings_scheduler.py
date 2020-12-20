@@ -1,6 +1,5 @@
 import pytest
-
-from containers_functions.meeting_scheduler import meeting_scheduler
+from imperatif.containers_functions.meeting_scheduler import meeting_scheduler
 
 
 @pytest.mark.parametrize("value, expected_result", [

@@ -1,10 +1,7 @@
 def palindrome(value):
 
-    if isinstance(value, str):
-        value = [x for x in value]
-
-    reversed = value.copy()
-    reversed.reverse()
+    reversed_value = value.copy()
+    reversed_value.reverse()
 
     return value == value.copy().reverse()
 

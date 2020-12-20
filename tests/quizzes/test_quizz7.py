@@ -2,7 +2,7 @@ def isnumber(string):
     try:
         float(string)
         return True
-    except:
+    except: # pylint: disable=bare-except
         return False
 
 

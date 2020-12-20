@@ -1,11 +1,9 @@
-import os
-
 import pytest
 
 
-@pytest.fixture()
+@pytest.fixture(autouse=True)
 def germinal():
-    germinal = """Dans la plaine rase, sous la nuit sans étoiles,
+    germinal_text = """Dans la plaine rase, sous la nuit sans étoiles,
     d’une obscurité et d’une épaisseur d’encre, un
     homme suivait seul la grand-route de
     Marchiennes à Montsou, dix kilomètres de pavé,
@@ -21,10 +19,10 @@ def germinal():
     """
 
     with open('germinal.txt', mode='wb') as fich:
-        fich.write(germinal.encode('utf-16'))
+        fich.write(germinal_text.encode('utf-16'))
 
 
-def test_germinal(germinal):
+def test_germinal():
     with open('germinal.txt', 'rb') as fich:
         zola = fich.read().decode('utf-16')
         print(zola.strip())

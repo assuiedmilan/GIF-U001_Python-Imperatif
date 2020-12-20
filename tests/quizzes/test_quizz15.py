@@ -17,8 +17,8 @@ def histogramme(values, *, maxetiq=None, maxval=None):
     def compute_ticks(x):
         if maxval is None or x <= maxval:
             return x * '-'
-        else:
-            return (maxval - 1) * '-' + '*'
+
+        return (maxval - 1) * '-' + '*'
 
     def align_to_left(x):
         return "{}:".format(x[0:compute_last_key_index(x)].rjust(max_key_length))

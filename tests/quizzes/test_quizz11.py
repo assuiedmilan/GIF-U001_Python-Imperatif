@@ -21,7 +21,4 @@ def text2morse(value):
     return ' | '.join([__convert_word(x) for x in list_of_words])
 
 def test_test2morse():
-    assert '.--. -.-- - .... --- -. | . -. | -- --- .-. ... .' == text2morse('python en morse')
-
-
-
+    assert text2morse('python en morse') == '.--. -.-- - .... --- -. | . -. | -- --- .-. ... .'
