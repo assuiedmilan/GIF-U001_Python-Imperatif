@@ -1,4 +1,4 @@
-from algebra.combinations import compute_all_combinations_of_positive_negative
+from algebra_functions.combinations import compute_all_combinations_of_positive_negative
 
 
 def test_two_values():

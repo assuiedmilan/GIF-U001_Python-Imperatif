@@ -1,7 +1,7 @@
 import pytest
 
-from algebra.combinations import compute_all_combinations_of_positive_negative
-from algebra.vector_calculus import compute_two_dimensional_norm
+from algebra_functions.combinations import compute_all_combinations_of_positive_negative
+from algebra_functions.vector_calculus import compute_two_dimensional_norm
 
 
 @pytest.mark.parametrize("x, y, expected_results", [(0, 0, 0), (1, 1, 1.414), (5, 9, 10.296)])
