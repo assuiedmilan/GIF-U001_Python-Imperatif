@@ -1,0 +1,8 @@
+pylint
+mock
+pytest
+pytest-lazy-fixture
+pytest-timeout
+pytest-mock
+testfixtures
+wget
