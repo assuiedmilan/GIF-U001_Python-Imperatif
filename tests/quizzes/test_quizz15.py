@@ -42,27 +42,23 @@ def histogramme(values, *, maxetiq=None, maxval=None):
 
 
 def test_histogramme():
-    first_case = """
-                   0        10        20        30
+    first_case = """               0        10        20        30
                +---------+---------+---------+
           chats:----------
          chiens:-------------------------
 poissons rouges:---
         tortues:-------
                +---------+---------+---------+
-               0        10        20        30
-    """
+               0        10        20        30"""
 
-    second_case = """
-        0        10        20
+    second_case = """        0        10        20
         +---------+---------+
    chats:----------
   chiens:-----------------*
 poissons:---
  tortues:-------
         +---------+---------+
-        0        10        20    
-    """
+        0        10        20"""
 
-    assert first_case == histogramme({'chats': 10, 'poissons rouges': 3, 'chiens': 25, 'tortues': 7})
-    assert second_case == histogramme({'chats': 10, 'poissons rouges': 3, 'chiens': 25, 'tortues': 7}, maxetiq=8, maxval=18)
+    assert histogramme({'chats': 10, 'poissons rouges': 3, 'chiens': 25, 'tortues': 7}) == first_case
+    assert histogramme({'chats': 10, 'poissons rouges': 3, 'chiens': 25, 'tortues': 7}, maxetiq=8, maxval=18) == second_case
