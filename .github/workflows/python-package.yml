@@ -31,7 +31,7 @@ jobs:
         python -m pip install -r requirements.txt
     - name: Lint with pylint
       run: |
-        pylint functionnal_prog --rcfile=.pylintrc
+        pylint imperatif --rcfile=.pylintrc
         pylint tests --rcfile=.pylintrc
     - name: Test with pytest
       run: |
