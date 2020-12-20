@@ -1,0 +1,1 @@
+"""Exercices sur module_9.exceptions"""
